@@ -1,0 +1,42 @@
+.appointments-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.appointments-container li {
+    display: table-row;
+}
+
+.delete-button {
+    background-color: rgb(169, 218, 96);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(191, 247, 108);
+    color: white;
+}
+
+.delete-button:active {
+    transform: translateY(2px);
+}

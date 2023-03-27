@@ -1,0 +1,17 @@
+.hero {
+    border: black solid;
+  }
+  
+  .main-hero {
+    
+  }
+  
+  .main-hero h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .main-hero p {
+    font-size: 1.5rem;
+  }

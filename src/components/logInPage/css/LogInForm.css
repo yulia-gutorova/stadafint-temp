@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+  }
+
+.login-section-wrapper{
+    width: 90%;
+    min-height: 700px;
+    margin: 50px auto;
+}
+
+.login-section-background-image{
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../../assets/login-page.jpg');
+    filter: blur(2px); 
+}
+
+.login-form {
+    background-color: rgb(150, 151, 149); 
+    border: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+    width: 520px;
+    text-align: center;
+}
+
+.login-form-h1{
+    color: rgb(66, 107, 5);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.login-form h2{
+    color: black;
+    padding-top: 30px;
+}
+
+.login-section-button {
+    background-color: rgb(245, 177, 51);
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 20px 30px 10px;
+}
+
+.login-section-button:hover{
+    background-color: rgb(243, 125, 8);
+    text-decoration: underline;
+    color:black;
+} 
+
+.name{
+    height: 50px;
+    width: 250px;
+}
+
+.login-form p{
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logged-in-buttons{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    column-gap: 20px;
+}
