@@ -29,7 +29,7 @@ export interface IOneCompletedCleaning {
 }
 
 export interface ICleanerHero{
-    customerName : string
+    cleanerName : string
 }
 
 export interface ICleanerAppointments {

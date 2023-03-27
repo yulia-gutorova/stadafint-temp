@@ -31,6 +31,10 @@ function CleanerCompleted () {
             </div>
 
             <div className='completed-section'>
+
+                {completedCleanings.length===0 && <div className='planned-message-container'>
+                    <p id='planned-message'>You don't have any planned appointments now</p>
+                </div>}
                 <table className='table'>
                     <thead>
                         <tr>

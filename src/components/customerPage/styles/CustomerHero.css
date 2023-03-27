@@ -1,17 +1,25 @@
-.hero {
+.customer-hero {
+  display: flex;
+  justify-content: left;
+  min-height: 500px;
   border: black solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../assets/customer-page.png');
 }
 
-.main-hero {
-  
+.customer-main-hero {
+  height: 200px;
+  width: 40%;
+  margin: 10px 20px 0px 200px;  
 }
 
-.main-hero h1 {
+.customer-main-hero h1 {
   margin-bottom: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
 
-.main-hero p {
+.customer-main-hero p {
   font-size: 1.5rem;
 }

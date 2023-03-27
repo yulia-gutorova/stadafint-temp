@@ -47,8 +47,12 @@ function CustomerCompleted (props : ICustomerCompleted) {
             <div className="completed-header">
                 <h2><span className="colored-word">Completed</span> appointments</h2>
             </div>
-
+            
             <div className='completed-section'>
+                {completedBookings.length === 0 && <div className='completed-message-container'>
+                    <p id='completed-message'>You don't have any completed appointments now</p>
+                </div>}
+
                 <table className='table'>
                     <thead>
                         <tr>
@@ -65,9 +69,9 @@ function CustomerCompleted (props : ICustomerCompleted) {
                     </tbody>
                 </table>
 
-                <div id="button-section">
+                {completedBookings.length !== 0 && <div id="button-section">
                     <button id="booking-button" onClick={onDeleteCheckedBookings}>Delete All Checked appointments</button>
-                </div>
+                </div>}
             </div>
 
 

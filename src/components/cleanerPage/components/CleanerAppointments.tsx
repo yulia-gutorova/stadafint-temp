@@ -6,17 +6,17 @@ import { BookingsContext } from "../CleanerPage";
 import { ICleanerAppointments } from "../interfaces";
 
 
-const CleanerAppointments = (props : ICleanerAppointments ) => {
+const CleanerAppointments = (props: ICleanerAppointments) => {
 
-    let {name} = useParams();
+    let { name } = useParams();
     let data = name!;
 
-    const {bookings} = useContext(BookingsContext)
+    const { bookings } = useContext(BookingsContext)
 
     //---------------------------------------------------
-    const onCompleteTaskHandler = (id : string) => {
+    const onCompleteTaskHandler = (id: string) => {
         props.onCompleteTaskHandler(id)
-    }  
+    }
 
     //---------------------------------------------------
     const plannedCleanings = bookings.filter(booking => (booking.cleanerName === data && booking.status === false)).map((booking) => (
@@ -32,30 +32,36 @@ const CleanerAppointments = (props : ICleanerAppointments ) => {
     ))
 
     //---------------------------------------------------
-    return(
+    return (
         <div className="cleaner-containers">
-            
+
             <div className="planned-header" id="planned-header">
-            <h2><span className="colored-word">Planned</span><br/> cleanings</h2>
+                <h2><span className="colored-word">Planned</span><br /> cleanings</h2>
             </div>
 
-            <table className='table'>
+            <div className='appointment-section'>
+            {plannedCleanings.length===0 && <div className='planned-message-container'>
+                    <p id='planned-message'>You don't have any planned cleanings now</p>
+                </div>}
+                <table className='table'>
 
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>Customer</th>
-                        <th>Type</th>
-                        <th>Actions</th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Customer</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
 
-                </thead>
-                <tbody>
-                     {plannedCleanings}                  
-                </tbody>
-            </table>
-            
+                    </thead>
+                    <tbody>
+                        {plannedCleanings}
+                    </tbody>
+                </table>
+            </div>
+
+
         </div>
     )
 }

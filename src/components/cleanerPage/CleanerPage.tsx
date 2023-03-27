@@ -55,7 +55,7 @@ const CleanerPage = (props : ICustomerPage) => {
     return(
         <div className="main-page">
             <BookingsContext.Provider value={{bookings, setBookings}}>
-                <CleanerHero customerName={data}/>
+                <CleanerHero cleanerName={data}/>
                 <CleanerButtonBar onScrollToElement={onScrollToElement}/>
                 <CleanerAppointments onCompleteTaskHandler={onCompleteTaskHandler}/>
                 <CleanerCompleted/>

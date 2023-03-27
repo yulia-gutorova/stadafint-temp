@@ -49,7 +49,7 @@ const {register, handleSubmit, reset, formState: {errors}} = useForm<FormData>()
     <div className="customer-containers" id="customer-booking">
       <div className="booking-header">
         <h2>
-          <span className="colored-word">Book</span> an appointment
+          <span className="colored-word">Book</span><br/> an appointment
         </h2>
       </div>
 

@@ -1,8 +1,7 @@
 .booking-header {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-
 }
 
 .booking-p {
@@ -14,7 +13,8 @@
 
 .booking-form {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
 }
 
 #booking-input {

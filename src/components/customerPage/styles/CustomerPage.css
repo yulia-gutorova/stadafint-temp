@@ -1,17 +1,18 @@
 html {
     scroll-padding-top: 200px;
     box-sizing: border-box;
-}
+} 
 
 body {
     background-color: #f9f9f9;
+    scroll-padding-top: 200px;
+    box-sizing: border-box;
 }
 
 .main-page{
     margin-top: 50px;
     display: grid;
-    gap: 1rem;
-    
+    gap: 1rem;   
 }
 
 .customer-containers {

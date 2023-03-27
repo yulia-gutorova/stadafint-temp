@@ -3,10 +3,7 @@ html {
   box-sizing: border-box;
 }
 
-*{
-  box-sizing: border-box;
-}
- .App {
+.App {
   /* text-align: center; */
   font-family: "terfens", sans-serif; 
 } 

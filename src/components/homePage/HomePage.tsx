@@ -1,3 +1,4 @@
+import './css/HomePage.css'
 import ContactUsSection from './components/ContactUsSection'
 import HeaderSection    from './components/HeaderSection'
 import ServiceSection   from './components/ServiceSection'

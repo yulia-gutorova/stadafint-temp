@@ -9,13 +9,13 @@ function CleanerHero (props : ICleanerHero) {
 
     return(
     
-    <div className="hero">
-            <div className="main-hero">
+    <div className="cleaner-hero">
+            <div className="cleaner-main-hero">
 
-            <h1>Welcome {props.customerName}!</h1>
-            <p>Get to know all about your work <br/> to plan everything  <br/> in the best way</p>
-
-            <img src= {CleanerScrub} alt="Hero picture"></img>
+            <h1>Welcome {props.cleanerName}!</h1>
+            <p>Take a look on your own schedule <br/> and just get to know  <br/> what needs doing on what days!</p>
+            
+            {/* <img src= {CleanerScrub} alt="Hero picture"></img> */}
 
             </div>
     </div>)

@@ -1,17 +1,25 @@
-.hero {
-    border: black solid;
-  }
-  
-  .main-hero {
-    
-  }
-  
-  .main-hero h1 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .main-hero p {
-    font-size: 1.5rem;
-  }
+.cleaner-hero {
+  display: flex;
+  justify-content: left;
+  min-height: 500px;
+  border: black solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../assets/cleaner-page.png');
+}
+
+.cleaner-main-hero {
+  height: 200px;
+  width: 40%;
+  margin: 0px 20px 0px 40%;  
+}
+
+.cleaner-main-hero h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cleaner-main-hero p {
+  font-size: 1.5rem;
+}
