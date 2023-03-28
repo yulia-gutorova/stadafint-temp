@@ -31,12 +31,14 @@ const CustomerPage = (props: ICustomerPage ) => {
         } 
         
       )() 
-      setUpdate('initial')
+      setUpdate('initial');
+      setChecked([]);
     }, [update]);
 
     //-----------------------------------------------------------
-    const onDeleteTaskHandler = (id: string) => {
-        deleteData(id);
+    const onDeleteTaskHandler = async (id: string) => {
+        let res : any = await deleteData(id);
+        //deleteData(id);
         setUpdate('deleteOne')
     }
 
@@ -57,9 +59,9 @@ const CustomerPage = (props: ICustomerPage ) => {
     }
 
     //-----------------------------------------------------------
-    const onDeleteCheckedBookings = () => {
-        deleteAllData(checked);
-        setChecked([]);
+    const onDeleteCheckedBookings = async () => {
+
+        let res : any = await deleteAllData(checked);
         setUpdate('deleteAll')
     }
 
@@ -79,6 +81,8 @@ const CustomerPage = (props: ICustomerPage ) => {
     //-----------------------------------------------------------
     props.loginButtonTextHandler(true);
 
+    console.log('checked');
+    console.log(checked);
     return(
         <div className="main-page">
             <CustomerHero customerName={data}/>
