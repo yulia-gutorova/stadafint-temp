@@ -1,4 +1,4 @@
-import './styles/CustomerPage.css';
+import './css/CustomerPage.css'
 import CustomerHero from './components/CustomerHero';
 import CustomerButtonBar from './components/CustomerButtonBar';
 import CustomerBooking from './components/CustomerBooking';
@@ -84,7 +84,7 @@ const CustomerPage = (props: ICustomerPage ) => {
     console.log('checked');
     console.log(checked);
     return(
-        <div className="main-page">
+        <div className='main-page'>
             <CustomerHero customerName={data}/>
             <CustomerButtonBar onScrollToElement={onScrollToElement}/>
             <CustomerBooking updateTrigger={updateTrigger}/>

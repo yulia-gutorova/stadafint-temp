@@ -1,3 +1,7 @@
+#completed-header{
+    scroll-margin: 100px;
+}
+
 .completed-section {
     display: flex;
     flex-direction: column;

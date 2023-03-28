@@ -1,6 +1,5 @@
-.completed-section {
-    display: flex;
-    flex-direction: column;
+#customer-completed{
+    scroll-margin: 0px;
 }
 
 .completed-header {

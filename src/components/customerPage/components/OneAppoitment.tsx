@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { IOneAppointment } from '../interfaces';
-import '../styles/CustomerBooking.css'
+import '../css/CustomerBooking.css'
 
 
 const OneAppointment = (props : IOneAppointment) => {

@@ -1,5 +1,5 @@
 import { ICustomerButtonBar } from '../interfaces';
-import '../styles/CustomerButtonBar.css';
+import '../css/CustomerButtonBar.css';
 
 function CustomerButtonBar (props : ICustomerButtonBar) {
 

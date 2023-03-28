@@ -1,5 +1,5 @@
 import { IOneCompleted } from '../interfaces';
-import '../styles/CustomerCompleted.css'
+import '../css/CustomerCompleted.css'
 
 const OneCompleted = (props: IOneCompleted) => {
 

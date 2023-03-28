@@ -1,9 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Booking from 'src/models/Booking';
 import { BookingsContext } from '../CustomerPage';
 import { ICustomerAppointments } from '../interfaces';
-import '../styles/CustomerAppointments.css'
+import '../css/CustomerAppointments.css'
 import OneAppointment from './OneAppoitment';
 
 function CustomerAppointments(props: ICustomerAppointments) {

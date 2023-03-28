@@ -1,3 +1,7 @@
+#customer-appointments{
+    scroll-margin: 150px;
+}
+
 .appointment-section {
     display: flex;
     flex-direction: column;
@@ -53,4 +57,18 @@
 #planned-message{
     color : red;
     font-weight: bold;
+}
+
+.customer-containers {
+    background: white;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.colored-word {
+    color: rgb(169, 218, 96);
 }

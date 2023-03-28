@@ -1,3 +1,7 @@
+#customer-booking{
+    scroll-margin: 200px;
+}
+
 .booking-header {
     display: flex;
     justify-content: left;

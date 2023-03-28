@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import '../styles/CustomerHero.css';
+import '../css/CustomerHero.css';
 import { useParams } from "react-router-dom"
 import CleanerScrub from '../../../assets/CleanerScrub.png'
 import { ICustomerHero } from "../interfaces";

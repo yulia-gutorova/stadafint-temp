@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Booking from 'src/models/Booking';
+
 import { BookingsContext } from '../CustomerPage';
 import { ICustomerCompleted } from '../interfaces';
-import '../styles/CustomerCompleted.css';
+import '../css/CustomerCompleted.css';
 import OneCompleted from './OneCompleted';
 
 

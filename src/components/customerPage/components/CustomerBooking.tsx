@@ -1,4 +1,4 @@
-import "../styles/CustomerBooking.css";
+import "../css/CustomerBooking.css";
 
 import { useContext, useState} from "react";
 import axios from "axios";
